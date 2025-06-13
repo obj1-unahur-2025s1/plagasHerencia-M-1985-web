@@ -1,9 +1,19 @@
-import example.pepita
+// testExample.wtest
 
-describe "group of tests for pepita" {
 
-  test "pepita has initial energy" {
-    assert.equals(100, pepita.energy())
+
+
+import plagas.*
+import elementos.*
+
+describe "Primera etapa de tests" {
+  test "Son o no buenos" {
+    barrio.agregarElemento(new Hogar())
+    barrio.agregarElemento(new Huerta())
+    barrio.agregarElemento(new Mascota())
+
+    assert.that(barrio)
+    hogarTest = new Hogar(mugreNivel=2, confort=6)
+    assert.that(hogarTest.esBueno())
   }
-
 }
